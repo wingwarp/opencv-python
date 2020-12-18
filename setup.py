@@ -129,6 +129,7 @@ def main():
             "-DPYTHON3_LIBRARY=%s" % python_lib_path,
             "-DBUILD_opencv_python3=ON",
             "-DBUILD_opencv_python2=OFF",
+            "-DOPENCV_ENABLE_NONFREE=ON",
             # Disable the Java build by default as it is not needed
             "-DBUILD_opencv_java=%s" % build_java,
             # When off, adds __init__.py and a few more helper .py's. We use our own helper files with a different structure.
